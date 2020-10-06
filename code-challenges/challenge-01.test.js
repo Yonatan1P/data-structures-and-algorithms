@@ -26,8 +26,6 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 const addValues = (arr, value) => {
-    let value = value;
-    let arr = [];
   arr.push(value);
 };
 

@@ -26,16 +26,11 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 const addValues = (arr, value) => {
-    let value = value;
-    let arr = [];
-  arr.push(value);
+    
 };
 
 const addNumbers = (num, arr, times, callback) => {
-    for (let i=0; i<times.value; i++) {
-        var value = num;
-        callback = addValues(arr,value);
-    }
+    
 };
 
 /* ------------------------------------------------------------------------------------------------

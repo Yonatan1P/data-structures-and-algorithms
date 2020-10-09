@@ -16,26 +16,33 @@ const speaker = (message, callback) => {
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+Write a function named addValues that takes in an array and a value and 
+pushes the value into the array. This function does not need a return statement.
 Then, write a function named addNumbers that takes in four arguments:
   - A number to be added to an array
   - An array into which the number should be added
   - The number of times the number should be added
-  - A callback function to use to add the numbers to the array (Hint: you already defined it)
-Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
+  - A callback function to use to add the numbers to the array (Hint: you already
+    defined it)
+Within the addNumbers function, invoke the callback function as many times as 
+necessary, based on the third argument of the addNumbers function.
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 const addValues = (arr, value) => {
-    
+    arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-    
+    for (let i =0 ; i< times ; i++){
+        callback(arr, num);
+    };
+    return(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
-Write a function named createList that takes in an array of the current store intentory.
+Write a function named createList that takes in an array of the current store
+ intentory.
 The inventory is formatted like this:
 [
   { name: 'apples', available: true },
@@ -44,26 +51,52 @@ The inventory is formatted like this:
   { name: 'bananas', available: true },
   { name: 'blueberries', available: false }
 ]
-This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+This function should use forEach to populate your grocery list based on the 
+store's inventory. If the item is available, add it to your list. Return the 
+final list.
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
+  const finalList = [];
+  //const availability = availableItems.available;
+  availableItems.forEach(item =>{
+    if ( item.available === true){
+        finalList.push(item.name);
+    }
+  });
+  return(finalList);
   // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 Write a function named fizzbuzz that takes in an array of numbers.
-Iterate over the array using forEach to determine the output based on several rules:
+Iterate over the array using forEach to determine the output based on several 
+rules:
   - If a number is divisible by 3, add the word "Fizz" to the output array.
   - If the number is divisible by 5, add the word "Buzz" to the output array.
-  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
+  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to 
+  the output array.
   - Otherwise, add the number to the output array.
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+    const outArr = [];
+    //const availability = availableItems.available;
+    arr.forEach(number =>{
+      if (number%3 === 0 && number%5 === 0){
+          outArr.push('Fizz Buzz');
+        }else if( number%3 === 0){
+        outArr.push('Fizz');
+      }else if(number%5 === 0){
+          outArr.push('Buzz');
+        }else {
+            outArr.push(number);
+      }
+    });
+    return(outArr);
+    // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------

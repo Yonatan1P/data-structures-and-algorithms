@@ -51,7 +51,8 @@ const alphabetize = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings sorted by their length, lowest to highest.
+Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings
+sorted by their length, lowest to highest.
 ------------------------------------------------------------------------------------------------ */
 
 const sortByLength = (arr) => {
@@ -65,13 +66,23 @@ const sortByLength = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
-Write a function named alphabetizeBetter that takes in an array of strings and returns the same array, with the strings sorted alphabetically. Capitalization should not change the sort order of two strings.
+Write a function named alphabetizeBetter that takes in an array of strings and returns the same array, with the
+strings sorted alphabetically. Capitalization should not change the sort order of two strings.
 
-For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, and so is ['alphabet', 'Alphabet', 'carrot', 'Zebra'].
+For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, and so is 
+['alphabet', 'Alphabet', 'carrot', 'Zebra'].
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-    // Solution code here...
+    arr.sort(function(a, b){
+        if (a.toUpperCase() > b.toUpperCase()){
+            return 1
+        } else {
+            return -1
+        }
+        });
+        
+        return arr; // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,7 +99,9 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-    // Solution code here...
+   arr.sort(function(a,b){
+
+   }); // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,7 +113,7 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbersByLength = (arr) => {
-    // Solution code here...
+   // Solution code here...
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -246,7 +259,7 @@ describe('Testing challenge 4', () => {
     });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
     test('It should alphabetize without regard to capitalization', () => {
         expect(alphabetizeBetter(['Alice', 'apple', 'alert', 'Average'])).toStrictEqual(['alert', 'Alice', 'apple', 'Average']);
         const ans = alphabetizeBetter(['alphabet', 'Zebra', 'Alphabet', 'carrot']);

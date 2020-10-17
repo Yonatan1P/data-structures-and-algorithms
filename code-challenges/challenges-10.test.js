@@ -50,7 +50,14 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+//   for (let i = 0; i < input.length ; i++) {
+//         let result = input.reduce(callback( accumulator, value, idx, input[i])({
+//         if (target === value){
+//             accumulator = accumulator + 1
+//             }
+//         }, 0);
+//   }
+//   return result;
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -1,15 +1,19 @@
 'use strict';
 
+
 // to learn more about the cheerio library and what it is doing, look at their 
 //documentation: https://www.npmjs.com/package/cheerio
+
 const cheerio = require('cheerio');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
+
 Write a function named templateWithJQuery that uses jQuery to get the html
  template from the DOM, copy the contents, fill it with the Star Wars People,
   and append it to the DOM.
+
 ------------------------------------------------------------------------------------------------ */
 let starWarsPeople = [
   {
@@ -40,6 +44,7 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templateWithJQuery = () => {
+
     starWarsPeople.forEach(person =>{
         const clone = $('#template').html();
         var $template = $('<section>'+clone+'</section>');
@@ -49,10 +54,11 @@ const templateWithJQuery = () => {
         $('main').append($template);
     });
   
-}
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
+
 
 Write a function named howMuchPencil that takes in a string, as written on the 
 side of a pencil.
@@ -71,31 +77,38 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+
   for(let i = 0; i < str.length+1; i++) {
     var shorterStr= str.slice(i);
     result.push(shorterStr);
     };
     // result.push('');
     return result;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
+
 Write a function name wordsToCharList that, given a string as input, returns a new array
  where every element is a character of the input string.
+
 
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
+
   let charList = arr.split('');
   return charList;// Solution code here...
+
 };
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
+
 
 You are making a grocery list for ingredients needed in the gruffalo crumble 
 recipe, below. Rather than taking the entire recipe, you only want a list of 
@@ -107,6 +120,7 @@ array of the food items without any amount or units. Just the name. For example,
 
 Use slice for this function, maybe more than once. The Array.indexOf() method 
 may also be helpful.
+
 
 Do not use split for this function.
 ------------------------------------------------------------------------------------------------ */
@@ -142,12 +156,14 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
+
     recipe.ingredients.forEach(ingredient => {
         let firstSlice = ingredient.slice(ingredient.indexOf(' ') + 1);
         let secondSlice = firstSlice.slice(firstSlice.indexOf(' ') + 1);
         result.push(secondSlice);
     });
     return result;
+
 };
 
 /* ------------------------------------------------------------------------------------------------

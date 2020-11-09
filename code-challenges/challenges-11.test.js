@@ -46,17 +46,20 @@ on several rules:
 
 Return either true or false.
 
-Note: if you ever need to validate an email using a regex in practice, the Internet has the actual regex you should use. It's many many lines long.
+Note: if you ever need to validate an email using a regex in practice, the Internet has the
+actual regex you should use. It's many many lines long.
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  // Solution code here...
+  const regex = /^(\w+|\w+\.\w+)[@](\w+.com|\w+.net|\w+.org)$/;
+  return regex.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named validatePhoneNumber that accepts a phone number and determines if it is valid.
+Write a function named validatePhoneNumber that accepts a phone number and determines if 
+it is valid.
 
 Acceptable formats include:
  - (555) 555-5555
@@ -69,13 +72,15 @@ Acceptable formats include:
  - 555555-5555
  - 5555555555
 
-Your function should include a single regular expression pattern that matches any of these formats.
+Your function should include a single regular expression pattern that matches any of these 
+formats.
 
 Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  let regex = /^(\d{3}|\(\d{3}\))[-\s)]?\d{3}[-\s]?\d{4}$/
+  return regex.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------

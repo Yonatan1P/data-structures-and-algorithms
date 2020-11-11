@@ -6,3 +6,6 @@ challenge-01:
 
 challenge-02:
 ![array-shift](./assets/challenge2-whiteboard.png)
+
+challenge-03:
+![array-binary-search](./assets/challenge3-whiteboard.png)

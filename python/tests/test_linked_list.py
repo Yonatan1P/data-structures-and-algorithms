@@ -52,5 +52,15 @@ def test_str():
     current_list.insert("Cat")
     current_list.insert("The")
     actual = current_list.__str__()
-    expected = "{The}->{Cat}->{Climbed}->{Up}->{The}->{Tree}->Null"
+    expected = "{ The } -> { Cat } -> { Climbed } -> { Up } -> { The } -> { Tree } -> NULL"
+    assert actual == expected
+
+def test_append():
+    current_list=LinkedList()
+    current_list.insert(1)
+    current_list.insert(2)
+    current_list.insert(3)
+    current_list.append(4)
+    actual = current_list.__str__()
+    expected = "{ 3 } -> { 2 } -> { 1 } -> { 4 } -> NULL"
     assert actual == expected

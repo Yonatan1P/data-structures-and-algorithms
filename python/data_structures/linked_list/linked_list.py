@@ -70,3 +70,23 @@ class LinkedList():
         if current_position.value == existing_value:
             insert_node = Node(insert_value, current_position.next_node)
             current_position.next_node = insert_node
+
+    def count_from_end(self, reverse_index):
+        current_position = self.head
+        list_length = 0
+
+        while current_position:
+            list_length += 1
+            current_position = current_position.next_node
+
+        if reverse_index >= list_length or reverse_index < 0:
+            return "Exception"
+
+        current_position = self.head
+        reverse_index +=1
+        for i in range(0, list_length - reverse_index):
+            current_position = current_position.next_node
+            i += 1
+        print(current_position.value)
+
+        return current_position.value

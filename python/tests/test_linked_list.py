@@ -1,4 +1,4 @@
-import pytest
+
 from data_structures.linked_list.linked_list import LinkedList
 
 
@@ -136,4 +136,60 @@ def test_insert_after_middle_node():
     current_list.insert_after(2, 3)
     actual = current_list.__str__()
     expected = "{ 1 } -> { 1 } -> { 2 } -> { 3 } -> { 1 } -> { 1 } -> NULL"
+    assert actual == expected
+
+
+def test_count_from_end_great_than_length():
+    current_list = LinkedList()
+    current_list.insert(1)
+    current_list.insert(2)
+    current_list.insert(3)
+    current_list.insert(4)
+    current_list.insert(5)
+    actual = current_list.count_from_end(10)
+    expected = "Exception"
+    assert actual == expected
+
+
+def test_count_from_end_equal_to_length():
+    current_list = LinkedList()
+    current_list.insert(1)
+    current_list.insert(2)
+    current_list.insert(3)
+    current_list.insert(4)
+    current_list.insert(5)
+    actual = current_list.count_from_end(5)
+    expected = "Exception"
+    assert actual == expected
+
+
+def test_count_from_end_not_positive_integer():
+    current_list = LinkedList()
+    current_list.insert(1)
+    current_list.insert(2)
+    current_list.insert(3)
+    current_list.insert(4)
+    current_list.insert(5)
+    actual = current_list.count_from_end(-2)
+    expected = "Exception"
+    assert actual == expected
+
+
+def test_count_from_end_length_of_one():
+    current_list = LinkedList()
+    current_list.insert(1)
+    actual = current_list.count_from_end(0)
+    expected = 1
+    assert actual == expected
+
+
+def test_count_from_end_properly():
+    current_list = LinkedList()
+    current_list.insert(1)
+    current_list.insert(2)
+    current_list.insert(3)
+    current_list.insert(4)
+    current_list.insert(5)
+    actual = current_list.count_from_end(2)
+    expected = 3
     assert actual == expected

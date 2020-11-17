@@ -26,9 +26,28 @@ Finally, there is a dunder string method which prints out all the node values in
 ### Code Challenge 06
 2-insertions
 https://github.com/Yonatan1P/data-structures-and-algorithms/pull/22
-[x]Can successfully add a node to the end of the linked list
-[x]Can successfully add multiple nodes to the end of a linked list
-[x]Can successfully insert a node before a node located i the middle of a linked list
-[x]Can successfully insert a node before the first node of a linked list
-[x]Can successfully insert after a node in the middle of the linked list
-[x]Can successfully insert a node after the last node of the linked list
+- [x]Can successfully add a node to the end of the linked list
+
+- [x]Can successfully add multiple nodes to the end of a linked list
+
+- [x]Can successfully insert a node before a node located i the middle of a linked list
+
+- [x]Can successfully insert a node before the first node of a linked list
+
+- [x]Can successfully insert after a node in the middle of the linked list
+
+- [x]Can successfully insert a node after the last node of the linked list
+
+### Code Challenge 07
+ll-kth-from-the-end
+https://github.com/Yonatan1P/data-structures-and-algorithms/pull/23
+
+- [x] Where k is greater than the length of the linked list
+
+- [x] Where k and the length of the list are the same
+
+- [x] Where k is not a positive integer
+
+- [x] Where the linked list is of a size 1
+
+- [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list

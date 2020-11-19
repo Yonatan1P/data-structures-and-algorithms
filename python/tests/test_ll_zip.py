@@ -18,6 +18,14 @@ def test_zip_lists_happy():
     expected = "{ 1 } -> { A } -> { 2 } -> { B } -> { 3 } -> { C } -> { 4 } -> { D } -> { 5 } -> { E } -> NULL"
     assert actual == expected
 
+def test_zip_list_no_lists():
+    list_1 = LinkedList()
+    list_2 = LinkedList()
+    actual = zip_lists(list_1,list_2)
+    expected = "NULL"
+    assert actual == expected
+
+
 def test_zip_lists_first_longer():
     list_1 = LinkedList()
     list_1.insert("5")
@@ -32,7 +40,7 @@ def test_zip_lists_first_longer():
     actual = zip_lists(list_1,list_2)
     expected = "{ 1 } -> { A } -> { 2 } -> { B } -> { 3 } -> { C } -> { 4 } -> { 5 } -> NULL"
     assert actual == expected
-    
+
 @pytest.mark.skip('pending')
 def test_zip_lists_second_longer():
     list_1 = LinkedList()
@@ -48,3 +56,4 @@ def test_zip_lists_second_longer():
     actual = zip_lists(list_1,list_2)
     expected = "{ 1 } -> { A } -> { 2 } -> { B } -> { 3 } -> { C } -> { D } -> { E } -> NULL"
     assert actual == expected
+

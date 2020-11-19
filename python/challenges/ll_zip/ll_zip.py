@@ -43,11 +43,11 @@ def zip_lists(first_list, second_list):
         current_1 = current_2.next_node
         current_2 = temp_2
 
-    while current_1:
-        first_list.append(current_1.value)
+    while current_1 and not current_2:
+        while first_list.next_node:
+            first_list = first_list.next_node
         current_1 = current_1.next_node
-
-    while current_2:
+    while current_2 and not current_1:
         first_list.append(current_2.value)
         current_2 = current_2.next_node
 

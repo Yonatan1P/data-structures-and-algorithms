@@ -15,6 +15,7 @@ class LinkedList():
 
     def includes(self, value):
         current_position = self.head
+
         while current_position:
             if current_position.value == value:
                 return True

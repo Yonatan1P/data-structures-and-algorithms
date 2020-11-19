@@ -51,3 +51,13 @@ https://github.com/Yonatan1P/data-structures-and-algorithms/pull/23
 - [x] Where the linked list is of a size 1
 
 - [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+### Code Challenge 08
+ll-zip
+https://github.com/Yonatan1P/data-structures-and-algorithms/pull/24
+![ll-zip]python/assets/challenge8-whiteboard.png
+
+- [x] Happy path where list1 and list2 have equal length
+- [] Where first list is longer than second list
+- [] Where first list is shorter than second list
+- [x] zero array are input

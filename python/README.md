@@ -55,7 +55,7 @@ https://github.com/Yonatan1P/data-structures-and-algorithms/pull/23
 ### Code Challenge 08
 ll-zip
 https://github.com/Yonatan1P/data-structures-and-algorithms/pull/24
-![ll-zip]python/assets/challenge8-whiteboard.png
+![ll-zip](./assets/challenge8-whiteboard.png)
 
 - [x] Happy path where list1 and list2 have equal length
 - [] Where first list is longer than second list

@@ -61,3 +61,9 @@ https://github.com/Yonatan1P/data-structures-and-algorithms/pull/24
 - [] Where first list is longer than second list
 - [] Where first list is shorter than second list
 - [x] zero array are input
+
+### Code Challenge 09
+Mock Interview
+Interviewer: Paul Leonard
+Interview Rubric: https://docs.google.com/spreadsheets/d/1tmfzwZ6dLnbxtPhLq9clQ4HYNhxaHrON0bzopKWI4gQ/edit?usp=sharing
+![Mock-Interview](./assets/challenge9-mock_interview_whiteboard.png)

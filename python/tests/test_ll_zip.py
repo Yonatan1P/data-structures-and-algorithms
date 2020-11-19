@@ -41,7 +41,7 @@ def test_zip_lists_first_longer():
     expected = "{ 1 } -> { A } -> { 2 } -> { B } -> { 3 } -> { C } -> { 4 } -> { 5 } -> NULL"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_zip_lists_second_longer():
     list_1 = LinkedList()
     list_1.insert("3")

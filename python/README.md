@@ -24,8 +24,9 @@ Then there is an insert method which replaces the head with a new Node object th
 Then there is an includes method which scans through the LinkedList object, starting at the head, and matches the queried value to existing node values while node values actually exist.
 Finally, there is a dunder string method which prints out all the node values inside of a string with arrows point from one node to the next.
 ### Code Challenge 06
-2-insertions
+ll-insertions
 https://github.com/Yonatan1P/data-structures-and-algorithms/pull/22
+![ll-insertions](./assets/challenge6-whiteboard.png)
 - [x]Can successfully add a node to the end of the linked list
 
 - [x]Can successfully add multiple nodes to the end of a linked list

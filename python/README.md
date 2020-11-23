@@ -68,3 +68,7 @@ Mock Interview
 Interviewer: Paul Leonard
 Interview Rubric: https://docs.google.com/spreadsheets/d/1tmfzwZ6dLnbxtPhLq9clQ4HYNhxaHrON0bzopKWI4gQ/edit?usp=sharing
 ![Mock-Interview](./assets/challenge9-mock_interview_whiteboard.png)
+
+### Warm Up Challenge Class 13
+Actually done during class 11
+![Warm-Up-11](./assets/warm_up_class_13_whiteboard.png)

@@ -77,5 +77,12 @@ Actually done during class 11
 Psuedo Queue made of 2 stacks
 Create a psuedo queue that utilizes one stack to represent the queue.
 The PsuedoQueue class has a enqueue method and a dequeue method, following the first-in-first out principles.
-When you enqueue, you want to add a new node 
+When you enqueue, you want to add a new node
 ![PsuedoQueue](./assets/challenge11-whiteboard.png)
+
+### Code Challenge 12
+fifo-animal-shelter
+Create a queue of animals in the animal shelter
+enqueue the animals in order
+dequeue the animals by a given argument of animal type, then return the first animal of that type that was enqueued
+![fifo-animal-shelter](./assets/challenge-12-whiteboard.png)

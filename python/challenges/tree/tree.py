@@ -1,17 +1,40 @@
 class Node:
 
-    def __init__(self,value):
+    def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
+
 
 class BinaryTree:
 
     def __init__(self):
         self.root = None
 
+    def find_maximum_value(self):
+
+        if self.root:
+            max_value = self.root.value
+        else:
+            max_value = False
+
+        def walk(root):
+            nonlocal max_value
+            if not root:
+                return
+            if root.value > max_value:
+                max_value = root.value
+
+            walk(root.left)
+            walk(root.right)
+
+        walk(self.root)
+
+        return max_value
+
     def preOrder(self):
         values = []
+
         def walk(root):
             if not root:
                 return
@@ -20,14 +43,10 @@ class BinaryTree:
             walk(root.right)
         walk(self.root)
         return values
-    #    if root:
-    #        self.preOrder(self.root.left)
-    #        print(self.root.value)
-    #        self.preOrder(self.root.right)
-
 
     def postOrder(self):
         values = []
+
         def walk(root):
             if not root:
                 return
@@ -36,13 +55,10 @@ class BinaryTree:
             values.append(root.value)
         walk(self.root)
         return values
-    #    if root:
-    #        self.postOrder(self.root.left)
-    #        self.postOrder(self.root.right)
-    #        print(self.root.value)
 
     def inOrder(self):
         values = []
+
         def walk(root):
             if not root:
                 return
@@ -51,6 +67,7 @@ class BinaryTree:
             walk(root.right)
         walk(self.root)
         return values
+
 
 class BinarySearchTree(BinaryTree):
 
@@ -69,12 +86,12 @@ class BinarySearchTree(BinaryTree):
 
             elif root.value < value:
                 if not root.right:
-                    root.right=Node(value)
+                    root.right = Node(value)
                 root.right = walk(root.right)
 
             else:
                 if not root.left:
-                    root.left=Node(value)
+                    root.left = Node(value)
                 root.left = walk(root.left)
             return root
 

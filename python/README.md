@@ -95,3 +95,8 @@ Creating a binary tree that adds a new node in the ordered binary tree fashion w
 A method in binarysearchtree to find if the tree contains a value.
 
 A method in binary tree to place the values in order, pre order, or post order.
+
+### Code Challenge Binary Tree BST Implementation
+![BST-Implementation](./assets/challenge17-whiteboard.png)
+
+Find the maximum value of the binary tree and return that value when the find_maximum_value() instance method is called from the binary tree class.

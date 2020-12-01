@@ -40,24 +40,41 @@ class Queue():
 
     def __init__(self):
         self.front = None
+        self.rear = None
 
     def enqueue(self, value):
-        current = self.front
-        node = Node(value)
-        if not current:
-            self.front = node
-            return
+        if not self.rear:
+            self.rear = Node(value)
+            self.front = self.rear
         else:
-            while current.next:
-                current = current.next
-            current.next = node
+            self.rear.next = Node(value)
+            self.rear = self.rear.next
+        # current = self.front
+        # node = Node(value)
+        # if not current:
+        #     self.front = node
+        #     return
+        # else:
+        #     while current.next:
+        #         current = current.next
+        #     current.next = node
 
     def dequeue(self):
         current = self.front
-        print(current.next.value)
+
         if not current:
-            return
+            # raise exception
+            raise InvalidOperationError('dequeue error')
         else:
-            while current.next:
-                current = current.next
-            return
+            if self.front == self.rear:
+                self.rear = None
+            self.front = current.next
+            return current.value
+
+    def peek(self):
+        if not self.front:
+            raise InvalidOperationError('No front for peek') # Throw an error if there is no self.front
+        return self.front.value
+
+    def is_empty(self):
+        return not self.front

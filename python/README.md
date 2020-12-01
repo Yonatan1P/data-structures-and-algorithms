@@ -72,3 +72,10 @@ Interview Rubric: https://docs.google.com/spreadsheets/d/1tmfzwZ6dLnbxtPhLq9clQ4
 ### Warm Up Challenge Class 13
 Actually done during class 11
 ![Warm-Up-11](./assets/warm_up_class_13_whiteboard.png)
+
+### Code Challenge 11
+Psuedo Queue made of 2 stacks
+Create a psuedo queue that utilizes one stack to represent the queue.
+The PsuedoQueue class has a enqueue method and a dequeue method, following the first-in-first out principles.
+When you enqueue, you want to add a new node 
+![PsuedoQueue](./assets/challenge11-whiteboard.png)

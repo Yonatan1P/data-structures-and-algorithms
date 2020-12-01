@@ -86,3 +86,12 @@ Create a queue of animals in the animal shelter
 enqueue the animals in order
 dequeue the animals by a given argument of animal type, then return the first animal of that type that was enqueued
 ![fifo-animal-shelter](./assets/challenge-12-whiteboard.png)
+
+### Code Challenge 13
+Binary Tree
+
+Creating a binary tree that adds a new node in the ordered binary tree fashion where if the added value is smaller than its current node, then it will be placed somewhere on the left. Otherwise, the added node is added somewhere on the right.
+
+A method in binarysearchtree to find if the tree contains a value.
+
+A method in binary tree to place the values in order, pre order, or post order.

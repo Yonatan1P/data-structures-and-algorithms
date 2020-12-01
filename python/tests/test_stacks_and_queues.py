@@ -98,16 +98,41 @@ def test_enqueue():
     expected = "apple"
     assert actual == expected
 
+def test_multiple_enqueue():
+    q = Queue()
+    q.enqueue("apple")
+    q.enqueue("banana")
+    q.enqueue("orange")
+    q.enqueue("pineapple")
+    q.enqueue("mango")
+    actual1 = q.front.value
+    expected1 = "apple"
+    assert actual1 == expected1
+    actual2 = q.rear.value
+    expected2 = "mango"
+    assert actual2 == expected2
 
 def test_dequeue():
     q = Queue()
     q.enqueue("apple")
     q.enqueue("banana")
-    actual = q.dequeue()
-    expected = "apple"
+    actual1 = q.dequeue()
+    expected1 = "apple"
+    assert actual1 == expected1
+    actual2 = q.front.value
+    expected2 = "banana"
+    assert actual2 == expected2
+
+def test_dequeue_empty_rear():
+    q = Queue()
+    q.enqueue("apple")
+    q.dequeue()
+    actual = q.rear
+    expected = None
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
+
 def test_peek():
     q = Queue()
     q.enqueue("apple")
@@ -117,13 +142,13 @@ def test_peek():
     expected = "apple"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_peek_when_empty():
     q = Queue()
     with pytest.raises(InvalidOperationError):
         q.peek()
 
-@pytest.mark.skip('pending')
+
 def test_enqueue_one():
     q = Queue()
     q.enqueue("apples")
@@ -131,7 +156,7 @@ def test_enqueue_one():
     expected = "apples"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_enqueue_two():
     q = Queue()
     q.enqueue("apples")
@@ -140,13 +165,13 @@ def test_enqueue_two():
     expected = "apples"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_dequeue_when_empty():
     q = Queue()
     with pytest.raises(InvalidOperationError):
         q.dequeue()
 
-@pytest.mark.skip('pending')
+
 def test_dequeue_when_full():
     q = Queue()
     q.enqueue("apples")
@@ -155,7 +180,7 @@ def test_dequeue_when_full():
     expected = "apples"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_peek_post_dequeue():
     q = Queue()
     q.enqueue("apples")
@@ -165,14 +190,14 @@ def test_peek_post_dequeue():
     expected = "bananas"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_is_empty():
     q = Queue()
     actual = q.is_empty()
     expected = True
     assert actual == expected
 
-@pytest.mark.skip('pending')
+
 def test_exhausted():
     q = Queue()
     q.enqueue("apple")

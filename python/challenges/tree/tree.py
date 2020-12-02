@@ -1,3 +1,6 @@
+from data_structures.stacks_and_queues.stacks_and_queues import Queue
+
+
 class Node:
 
     def __init__(self, value):
@@ -10,6 +13,27 @@ class BinaryTree:
 
     def __init__(self):
         self.root = None
+
+    def breadth_first_traversal(self):
+
+        output=[]
+        temp_queue = Queue()
+
+        if not self.root:
+            return
+
+        temp_queue.enqueue(self.root)
+
+        while not temp_queue.is_empty():
+            current_node = temp_queue.dequeue()
+            output += [current_node.value]
+            if current_node.left:
+                temp_queue.enqueue(current_node.left)
+
+            if current_node.right:
+                temp_queue.enqueue(current_node.right)
+
+        return output
 
     def find_maximum_value(self):
 

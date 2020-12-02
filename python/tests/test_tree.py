@@ -115,8 +115,9 @@ def test_find_max_value_true():
     expected = 5
     assert actual == expected
 
+
 # Happy Case
-def test_find_max_value_true():
+def test_find_max_value_alternate_true():
     tree = BinarySearchTree()
     tree.add(1)
     tree.add(5)
@@ -156,4 +157,33 @@ def test_find_max_value_empty():
     tree = BinarySearchTree()
     actual = tree.find_maximum_value()
     expected = False
+    assert actual == expected
+
+
+def test_breadth_first():
+    tree = BinarySearchTree()
+    tree.add(10)
+    tree.add(5)
+    tree.add(15)
+    tree.add(3)
+    tree.add(7)
+    tree.add(13)
+    tree.add(17)
+    tree.add(2)
+    tree.add(4)
+    tree.add(6)
+    tree.add(8)
+    tree.add(12)
+    tree.add(14)
+    tree.add(16)
+    tree.add(18)
+    actual = tree.breadth_first_traversal()
+    expected = [10,5,15,3,7,13,17,2,4,6,8,12,14,16,18]
+    assert actual == expected
+
+
+def test_breadth_first_empty_tree():
+    tree = BinarySearchTree()
+    actual = tree.breadth_first_traversal()
+    expected = None
     assert actual == expected

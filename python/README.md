@@ -100,3 +100,12 @@ A method in binary tree to place the values in order, pre order, or post order.
 ![BST-Implementation](./assets/challenge17-whiteboard.png)
 
 Find the maximum value of the binary tree and return that value when the find_maximum_value() instance method is called from the binary tree class.
+
+### Code Challenge 18
+![Breadth-First](./assets/challenge-18-whiteboard.jpeg)
+
+Go through the binary tree layer by layer and output the values of each node.
+
+Using a temporary queue to go through the binary tree and enqueue nodes at each of the levels of the tree.
+
+Before the temporary queue moves to the next level, it dequeues all of the current level nodes and appends their values to the output array.

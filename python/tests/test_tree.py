@@ -67,7 +67,7 @@ def test_post_order():
     tree.add(30)
     tree.add(4)
     actual = tree.postOrder()
-    expected = [4,2,30,10]
+    expected = [4, 2, 30, 10]
     assert actual == expected
 
 
@@ -104,6 +104,8 @@ def test_contain_false():
     assert actual == expected
 # Testing Find Max Value Method
 # Happy Path
+
+
 def test_find_max_value_true():
     tree = BinarySearchTree()
     tree.add(1)
@@ -129,6 +131,8 @@ def test_find_max_value_alternate_true():
     assert actual == expected
 
 # Edge Case
+
+
 def test_find_max_value_negatives():
     tree = BinarySearchTree()
     tree.add(-1)
@@ -141,6 +145,8 @@ def test_find_max_value_negatives():
     assert actual == expected
 
 # Find max of all zeroes
+
+
 def test_find_max_value_zeroes():
     tree = BinarySearchTree()
     tree.add(0)
@@ -178,7 +184,7 @@ def test_breadth_first():
     tree.add(16)
     tree.add(18)
     actual = tree.breadth_first_traversal()
-    expected = [10,5,15,3,7,13,17,2,4,6,8,12,14,16,18]
+    expected = [10, 5, 15, 3, 7, 13, 17, 2, 4, 6, 8, 12, 14, 16, 18]
     assert actual == expected
 
 

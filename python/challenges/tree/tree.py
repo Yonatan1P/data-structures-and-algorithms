@@ -1,45 +1,5 @@
-class Queue():
+from data_structures.stacks_and_queues.stacks_and_queues import Queue
 
-    def __init__(self):
-        self.front = None
-        self.rear = None
-
-    def enqueue(self, value):
-        if not self.rear:
-            self.rear = Node(value)
-            self.front = self.rear
-        else:
-            self.rear.next = Node(value)
-            self.rear = self.rear.next
-        # current = self.front
-        # node = Node(value)
-        # if not current:
-        #     self.front = node
-        #     return
-        # else:
-        #     while current.next:
-        #         current = current.next
-        #     current.next = node
-
-    def dequeue(self):
-        current = self.front
-
-        if not current:
-            # raise exception
-            pass
-        else:
-            if self.front == self.rear:
-                self.rear = None
-            self.front = current.next
-            return current.value
-
-    def peek(self):
-        if not self.front:
-            pass # Throw an error if there is no self.front
-        return self.front.value
-
-    def is_empty(self):
-        return not self.front
 
 class Node:
 
@@ -56,7 +16,7 @@ class BinaryTree:
 
     def breadth_first_traversal(self):
 
-        output=[]
+        output = []
         temp_queue = Queue()
 
         if not self.root:

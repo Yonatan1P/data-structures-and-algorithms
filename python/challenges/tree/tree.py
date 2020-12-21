@@ -1,4 +1,4 @@
-from data_structures.stacks_and_queues.stacks_and_queues import Queue
+from challenges.stacks_and_queues.stacks_and_queues import Queue
 
 
 class Node:

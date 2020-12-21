@@ -53,4 +53,5 @@ def match_brackets(string):
                     match_stack.pop()
                 else:
                     return False
+    print('this is the match stack:',match_stack.top)
     return not match_stack.top

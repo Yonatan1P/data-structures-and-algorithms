@@ -1,6 +1,6 @@
 import pytest
 
-from data_structures.stacks_and_queues.stacks_and_queues import Stack, InvalidOperationError, Queue
+from challenges.stacks_and_queues.stacks_and_queues import Stack, InvalidOperationError, Queue
 
 # Stack Tests
 def test_push_onto_empty():
@@ -65,7 +65,7 @@ def test_pop_until_empty():
     assert actual == expected
 
 
-def test_peek():
+def test_stack_peek():
     s = Stack()
     s.push("apple")
     s.push("banana")
@@ -132,8 +132,7 @@ def test_dequeue_empty_rear():
     assert actual == expected
 
 
-
-def test_peek():
+def test_queue_peek():
     q = Queue()
     q.enqueue("apple")
     q.enqueue("banana")

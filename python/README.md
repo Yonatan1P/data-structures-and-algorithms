@@ -109,3 +109,7 @@ Go through the binary tree layer by layer and output the values of each node.
 Using a temporary queue to go through the binary tree and enqueue nodes at each of the levels of the tree.
 
 Before the temporary queue moves to the next level, it dequeues all of the current level nodes and appends their values to the output array.
+
+# Challenge 31
+Find the first repeated word in a book.
+![repeat-words](./assets/challenge31-whiteboard.svg)

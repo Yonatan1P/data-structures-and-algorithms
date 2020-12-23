@@ -113,3 +113,8 @@ Before the temporary queue moves to the next level, it dequeues all of the curre
 # Challenge 31
 Find the first repeated word in a book.
 ![repeat-words](./assets/challenge31-whiteboard.svg)
+
+# Challenge 32
+Find the intersecting values of 2 given binary trees.
+Rather than 
+![tree-intersection](./assets/challenge32-whiteboard.png)

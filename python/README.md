@@ -116,5 +116,13 @@ Find the first repeated word in a book.
 
 # Challenge 32
 Find the intersecting values of 2 given binary trees.
-Rather than 
+Rather than
 ![tree-intersection](./assets/challenge32-whiteboard.png)
+
+# Challenge 33
+Left-join
+Given two hashmaps, add all the key/value pairs in the left hashmap into the output.
+
+Then go through the second hashmap and find the matching keys. When a matching key arises, append the value of the key in the second table to the corresponding array in your array of arrays output matrix.
+
+![left-join](./assets/challenge33-whiteboard.png)

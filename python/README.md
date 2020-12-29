@@ -126,3 +126,11 @@ Given two hashmaps, add all the key/value pairs in the left hashmap into the out
 Then go through the second hashmap and find the matching keys. When a matching key arises, append the value of the key in the second table to the corresponding array in your array of arrays output matrix.
 
 ![left-join](./assets/challenge33-whiteboard.png)
+
+# Challenge 37
+Validate that the brackets matching correctly.
+The method implemented uses a stack and a valid brackets pair set to go through the input string and add openning brackets to the stack, while popping matches as they come up. If there are there is an closer without an openner in the stack, then it returns false. If there is a closer that does not close the bracket at the top of the stack, then return false. If the stack is not empty by the end of the string, then return false.
+
+All tests passing
+
+![valid_brackets](./assets/challenge37-whiteboard.png)

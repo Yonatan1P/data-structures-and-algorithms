@@ -28,12 +28,14 @@ def test_unmatched_closer():
 
 
 def test_proper_brackets():
-    # actual1 = match_brackets("{[()]}")
-    # actual2 = match_brackets("{}")
+    actual1 = match_brackets("{[()]}")
+    actual2 = match_brackets("{}")
     actual3 = match_brackets("[]")
     actual4 = match_brackets("()")
+    actual5= match_brackets("[(){}]")
     expected = True
-    # assert actual1 == expected
-    # assert actual2 == expected
+    assert actual1 == expected
+    assert actual2 == expected
     assert actual3 == expected
     assert actual4 == expected
+    assert actual5 == expected

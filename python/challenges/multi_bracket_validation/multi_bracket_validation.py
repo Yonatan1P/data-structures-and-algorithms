@@ -49,7 +49,7 @@ def match_brackets(string):
             elif pair_bank[bracket] == char:
                 if not match_stack.top:
                     return False
-                elif match_stack.top.value == char:
+                elif match_stack.top.value == bracket:
                     match_stack.pop()
                 else:
                     return False

@@ -134,3 +134,10 @@ The method implemented uses a stack and a valid brackets pair set to go through 
 All tests passing
 
 ![valid_brackets](./assets/challenge37-whiteboard.png)
+
+# Challenge 38
+
+Print out pascals triangle. It prints out as an array of arrays.
+Tests passing for NaN, non-integers, happy path, and no input.
+
+![pascals-triangle](./assets/challnege38-whiteboard.png)

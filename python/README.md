@@ -141,3 +141,15 @@ Print out pascals triangle. It prints out as an array of arrays.
 Tests passing for NaN, non-integers, happy path, and no input.
 
 ![pascals-triangle](./assets/challnege38-whiteboard.png)
+
+# Challenge 39 Review
+
+3 Challenges from LeetCode
+
+First Challenge: Letter Combination
+
+Given a string of numbers, return all the possible combinations of letters that those numbers can map out to.
+
+The most efficient way would probably be a hashtable, but I tried to implement a linked list here
+
+![letter-combination](./assets/letter-combination-whiteboard.png)

@@ -1,6 +1,6 @@
 
 from challenges.linked_list.linked_list import LinkedList
-
+from code_challenges.reverse_linked_list import reverseLinkedList
 
 def test_empty_list():
     assert LinkedList()
@@ -192,4 +192,15 @@ def test_count_from_end_properly():
     current_list.insert(5)
     actual = current_list.count_from_end(2)
     expected = 3
+    assert actual == expected
+
+def test_reverse_linked_list():
+    current_list = LinkedList()
+    current_list.insert(1)
+    current_list.insert(2)
+    current_list.insert(3)
+    current_list.insert(4)
+    current_list.insert(5)
+    actual = reverseLinkedList(current_list)
+    expected = 1
     assert actual == expected

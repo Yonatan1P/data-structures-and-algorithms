@@ -161,3 +161,16 @@ Mock Interviews: I did not partner up with anybody for this mock interview. I an
 All tests passing
 
 ![anagram](./assets/challenge-41-whiteboard.png)
+
+# Challenge 42
+
+Another Mock Interview
+
+I did this one by myself again. I did the three different ways to reverse a string.
+I was struggling on returning the recursive call, and I had to look it up.
+I was able to complete the other two ways with a stack and with an array. Both of those alternatives
+used more temporary storage compared to the recursive calls.
+
+All Tests Passing
+
+![reverse-string](./assets/challenge-42-whiteboard.png)

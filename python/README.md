@@ -153,3 +153,11 @@ Given a string of numbers, return all the possible combinations of letters that 
 The most efficient way would probably be a hashtable, but I tried to implement a linked list here
 
 ![letter-combination](./assets/letter-combination-whiteboard.png)
+
+# Challenge 41
+
+Mock Interviews: I did not partner up with anybody for this mock interview. I answered the question about the anagram and I went about it using the brute force method. I am hoping to go back and implement a hash table for the solution in the future.
+
+All tests passing
+
+![anagram](./assets/challenge-41-whiteboard.png)

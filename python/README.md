@@ -183,3 +183,13 @@ Another one by myself. I did the water system problem. I had never summed a bina
 All tests passing
 
 ![total-Usage](./assets/challenge-43-whiteboard.png)
+
+# Challenge 44
+
+Rotate A Matrix
+
+Take in a matrix, switch the i and j values but the j values should be in reverse order
+
+All tests passing
+
+![reverse-matrix](./assets/challenge-44-whiteboard.png)

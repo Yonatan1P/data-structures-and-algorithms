@@ -3,16 +3,44 @@ from challenges.stacks_and_queues.stacks_and_queues import Queue
 
 class Node:
 
-    def __init__(self, value):
+    def __init__(self, value, left=None, right=None):
         self.value = value
-        self.left = None
-        self.right = None
+        self.left = left
+        self.right = right
 
 
 class BinaryTree:
 
     def __init__(self):
         self.root = None
+
+    def insert(self, value):
+
+        node = Node(value, None, None)
+
+        if not self.root:
+            self.root = node
+            return
+
+        temp_queue = Queue()
+        temp_queue.enqueue(self.root)
+
+        while not temp_queue.is_empty():
+            current = temp_queue.dequeue()
+            
+            if not current.left:
+                current.left = node
+                return
+            else:
+                temp_queue.enqueue(current.left)
+
+            if not current.right:
+                current.right = node
+                return
+            else:
+                temp_queue.enqueue(current.right)
+
+
 
     def breadth_first_traversal(self):
 

@@ -174,3 +174,12 @@ used more temporary storage compared to the recursive calls.
 All Tests Passing
 
 ![reverse-string](./assets/challenge-42-whiteboard.png)
+
+# Challenge 43
+
+Mock Interview
+Another one by myself. I did the water system problem. I had never summed a binary tree before, but it was simple after I did a basic traversal and added the values to an integer output rather than an array output.
+
+All tests passing
+
+![total-Usage](./assets/challenge-43-whiteboard.png)

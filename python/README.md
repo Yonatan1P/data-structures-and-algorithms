@@ -193,3 +193,11 @@ Take in a matrix, switch the i and j values but the j values should be in revers
 All tests passing
 
 ![reverse-matrix](./assets/challenge-44-whiteboard.png)
+
+# Challenge 45
+
+Make a graph. Each node is expressed as a vertex. Each connection between nodes is called an Edge.
+
+All tests passing
+
+![graph](./assets/challenge-45-whiteboard.png)

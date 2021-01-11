@@ -201,3 +201,11 @@ Make a graph. Each node is expressed as a vertex. Each connection between nodes 
 All tests passing
 
 ![graph](./assets/challenge-45-whiteboard.png)
+
+# Challenge 46
+
+Make a breadth first traversal of a graph. Given a starting vertex, go through the the graph by enqueuing the edges of the front of the queue, and dequeuing the front into an output string. As you enqueue the ends of the edges, make sure to mark the vertices that have been read. In this case, I make a new read property of the node class that allows me to increment the value of those nodes that have indeed been read. Those that have been read cannot be enqueued again due to the condition that they have a read property other than 0.
+
+All tests passing
+
+![breadth-first-graph](./assets/challenge-46-whiteboard.png)

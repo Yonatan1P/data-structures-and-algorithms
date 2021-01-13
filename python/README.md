@@ -219,3 +219,16 @@ This problem asks for a given graph, to find the cost of flying between all the 
 All tests passing
 
 ![get-edges](./assets/challege-47-whiteboard.png)
+
+# Challenge 48
+
+Depth-first, preorder traversal of a graph. This is a function that takes in the adjacency list of a graph.
+
+This function uses a stack and adds vertices to the stack as the function traverse through the edges of the current vertex.
+
+Once a vertex is passed, it should not be passed over again. It will be added to the stack, and as it is removed from the stack,
+the vertices at the end of the removed vertex's edges will then be added to the stack.
+
+All tests passing!
+
+![depth-first](./assets/challenge-48-whiteboard.png)

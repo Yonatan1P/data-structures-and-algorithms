@@ -209,3 +209,13 @@ Make a breadth first traversal of a graph. Given a starting vertex, go through t
 All tests passing
 
 ![breadth-first-graph](./assets/challenge-46-whiteboard.png)
+
+# Challenge 47
+
+Get Edges: Imagine that there is a graph of destinations and each of the cities is represented by a vertex. An edge represents a flight between two cities, and the weight of the edge represents the cost of that flight.
+
+This problem asks for a given graph, to find the cost of flying between all the cities in a given array. If there are no flights that can get you between every city, then you must return False.
+
+All tests passing
+
+![get-edges](./assets/challege-47-whiteboard.png)
